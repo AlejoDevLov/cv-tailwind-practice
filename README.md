@@ -1,0 +1,1 @@
+Prototipo de CV maquetado con Tailwind
