@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    h1,h2,h3,h4,h5,h6 {
+        @apply font-bold
+    }
+}
+
+
+@layer components {
+    .icon-container {
+        @apply bg-card-color w-max p-4 rounded-full
+    }
+
+    .icon {
+        @apply fill-green-color w-10
+    }
+
+    .skills-container{
+        @apply py-12 px-8 bg-card-color border-b-2 border-transparent flex flex-col items-center
+    }
+}
+
+
+@layer utilities {
+    .clip-circle-0 {
+        clip-path: circle(0% at right top);
+    }
+
+    .clip-circle-full {
+        clip-path: circle(150% at right top);
+    }
+
+    .focus-input {
+        @apply outline-none focus:ring focus:ring-green-color focus:ring-inset rounded-md transition-[box-shadow]
+    }
+}
